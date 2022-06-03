@@ -1,7 +1,8 @@
 import "./App.css";
+import MainLayout from "./components/ui/Layout/MainLayout";
 
 const App = () => {
-  return <h1>Starter Template with Antd</h1>;
+  return <MainLayout />;
 };
 
 export default App;
