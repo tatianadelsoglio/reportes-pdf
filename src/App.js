@@ -1,8 +1,7 @@
 import "./App.css";
-import MainLayout from "./components/ui/Layout/MainLayout";
 
 const App = () => {
-  return <MainLayout />;
+  return <p>Template starter</p>;
 };
 
 export default App;
