@@ -55,7 +55,7 @@ const CardDolar = () => {
             className="row-content"
             gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
           >
-            <Col className="gutter-row" span={5}>
+            <Col className="gutter-row" span={6}>
               <div className="div-content">
                 <div className="div-content-img">
                   <div className="circulo bg-icon-purple-dark">
@@ -70,7 +70,7 @@ const CardDolar = () => {
                 </div>
               </div>
             </Col>
-            <Col className="gutter-row" span={5}>
+            <Col className="gutter-row" span={6}>
               <div className="div-content">
                 <div className="div-content-img">
                   <div className="circulo bg-icon-purple-dark">
@@ -85,7 +85,7 @@ const CardDolar = () => {
                 </div>
               </div>
             </Col>
-            <Col className="gutter-row" span={5}>
+            <Col className="gutter-row" span={6}>
               <div className="div-content">
                 <div className="div-content-img">
                   <div className="circulo bg-icon-purple-dark">
@@ -100,7 +100,7 @@ const CardDolar = () => {
                 </div>
               </div>
             </Col>
-            <Col className="gutter-row" span={5}>
+            <Col className="gutter-row" span={6}>
               <div>
                 <div className="estilo-valor">
                   <span>$0</span>

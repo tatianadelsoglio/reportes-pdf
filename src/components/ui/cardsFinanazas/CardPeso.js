@@ -160,7 +160,12 @@ const CardPeso = () => {
         <br />
         <Card title="RESUMEN">
           <Row>
-            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }}>
+            <Col
+             span={6} 
+             xs={{ order: 1 }} 
+             sm={{ order: 2 }} 
+             md={{ order: 3 }}
+            >
               <div className="div-content">
                 <div className="div-content-img">
                   <div className="circulo bg-icon-purple-dark">
@@ -175,7 +180,12 @@ const CardPeso = () => {
                 </div>
               </div>
             </Col>
-            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }}>
+            <Col 
+              span={6} 
+              xs={{ order: 1 }} 
+              sm={{ order: 2 }} 
+              md={{ order: 3 }}
+            >
               <div>
                 <div className="estilo-valor">
                   <span>$0</span>
@@ -183,7 +193,12 @@ const CardPeso = () => {
                 <div className="estilo-desc">ACUERDO DE CRÉDITO</div>
               </div>
             </Col>
-            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }}>
+            <Col 
+              span={6} 
+              xs={{ order: 1 }} 
+              sm={{ order: 2 }} 
+              md={{ order: 3 }}
+            >
               <div>
                 <div className="estilo-valor">
                   <span>$0</span>
