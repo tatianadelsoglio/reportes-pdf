@@ -1,0 +1,22 @@
+.card-content{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.ant-card-head-title {
+    text-align: start;
+}
+
+.row-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.div-content{
+    border: 1px solid black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
