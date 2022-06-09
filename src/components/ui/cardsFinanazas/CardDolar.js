@@ -1,6 +1,10 @@
 import React from "react";
 import Card from "antd/lib/card/Card";
 import { Col, Row, Divider } from "antd";
+import dollar from "../../../assets/img/dollar.svg";
+import bank from "../../../assets/img/bank.svg";
+import seeds from "../../../assets/img/seeds.svg";
+import grains from "../../../assets/img/wheat-grains.svg";
 import "./style.css";
 
 const CardDolar = () => {
@@ -14,15 +18,34 @@ const CardDolar = () => {
           >
             <Col className="gutter-row" span={6}>
               <div className="div-content">
-                <div style={{width:"50%"}}>SIMBOLO 1</div>
-                <div style={{width:"50%"}}>SALDO VENCIDO</div>
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={dollar} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">SALDO VENCIDO</div>
+                </div>
               </div>
             </Col>
             <Col className="gutter-row" span={6}>
-              <div style={{ border: "1px solid black" }}>SALDO A VENCER</div>
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">SALDO A VENCER</div>
+              </div>
             </Col>
             <Col className="gutter-row" span={6}>
-              <div style={{ border: "1px solid black" }}>SALDO TOTAL</div>
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">SALDO TOTAL</div>
+              </div>
             </Col>
           </Row>
         </Card>
@@ -34,24 +57,56 @@ const CardDolar = () => {
           >
             <Col className="gutter-row" span={5}>
               <div className="div-content">
-                <div style={{width:"50%" }}>SIMBOLO 2</div>
-                <div style={{width:"50%" }}>CH. EN CARTERA</div>
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={bank} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">CH. EN CARTERA</div>
+                </div>
               </div>
             </Col>
             <Col className="gutter-row" span={5}>
               <div className="div-content">
-                <div style={{width:"50%" }}>SIMBOLO 3</div>
-                <div style={{width:"50%" }}>PEND. FACTURAR</div>
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={seeds} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">PEND. FACTURAR</div>
+                </div>
               </div>
             </Col>
             <Col className="gutter-row" span={5}>
               <div className="div-content">
-                <div style={{width:"50%" }}>SIMBOLO 4</div>
-                <div style={{width:"50%" }}>VENTAS FORWARD</div>
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={grains} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">VENTAS FORWARD</div>
+                </div>
               </div>
             </Col>
             <Col className="gutter-row" span={5}>
-              <div style={{ border: "1px solid black" }}>CEREAL DISPONIBLE</div>
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">CEREAL DISPONIBLE</div>
+              </div>
             </Col>
           </Row>
         </Card>
@@ -63,15 +118,34 @@ const CardDolar = () => {
           >
             <Col className="gutter-row" span={6}>
               <div className="div-content">
-                <div style={{width:"50%" }}>SIMBOLO 5</div>
-                <div style={{width:"50%" }}>CRÉDITO TOTAL</div>
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={grains} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">CREDITO TOTAL</div>
+                </div>
               </div>
             </Col>
             <Col className="gutter-row" span={6}>
-              <div style={{ border: "1px solid black" }}>ACUERDO DE CRÉDITO</div>
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">ACUERDO DE CRÉDITO</div>
+              </div>
             </Col>
             <Col className="gutter-row" span={6}>
-              <div style={{ border: "1px solid black" }}>CRÉDITO DISPONIBLE</div>
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">CRÉDITO DISPONIBLE</div>
+              </div>
             </Col>
           </Row>
         </Card>

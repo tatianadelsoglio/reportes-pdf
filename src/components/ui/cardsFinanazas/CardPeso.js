@@ -1,6 +1,10 @@
 import React from "react";
-import { Col, Row } from 'antd';
+import { Col, Row } from "antd";
 import Card from "antd/lib/card/Card";
+import dollar from "../../../assets/img/dollar.svg";
+import bank from "../../../assets/img/bank.svg";
+import seeds from "../../../assets/img/seeds.svg";
+import grains from "../../../assets/img/wheat-grains.svg";
 import "./style.css";
 
 const CardPeso = () => {
@@ -8,7 +12,7 @@ const CardPeso = () => {
     <Card className="card-content" title="Peso">
       <Col>
         <Card title="SALDOS DE LA CUENTA">
-          <Row >
+          <Row>
             <Col
               span={6}
               xs={{ order: 1 }}
@@ -16,8 +20,43 @@ const CardPeso = () => {
               md={{ order: 3 }}
               lg={{ order: 4 }}
             >
-               <div>
-                <h1>SIMBOLO1</h1>
+              <div className="div-content">
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={dollar} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">SALDO VENCIDO</div>
+                </div>
+              </div>
+            </Col>
+            {/* <Col
+              span={6}
+              xs={{ order: 1 }}
+              sm={{ order: 2 }}
+              md={{ order: 3 }}
+              lg={{ order: 4 }}
+            >
+              <div>
+                SALDO VENCIDO
+              </div>
+            </Col> */}
+            <Col
+              span={6}
+              xs={{ order: 1 }}
+              sm={{ order: 2 }}
+              md={{ order: 3 }}
+              lg={{ order: 4 }}
+            >
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">SALDO A VENCER</div>
               </div>
             </Col>
             <Col
@@ -28,34 +67,15 @@ const CardPeso = () => {
               lg={{ order: 4 }}
             >
               <div>
-                <h1>SALDO VENCIDO</h1>
-              </div>
-            </Col>
-            <Col
-              span={6}
-              xs={{ order: 1 }}
-              sm={{ order: 2 }}
-              md={{ order: 3 }}
-              lg={{ order: 4 }}
-            >
-               <div>
-                <h1>SALDO A VENCER</h1>
-              </div>
-            </Col>
-            <Col
-              span={6}
-              xs={{ order: 1 }}
-              sm={{ order: 2 }}
-              md={{ order: 3 }}
-              lg={{ order: 4 }}
-            >
-               <div>
-                <h1>SALDO TOTAL</h1>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">SALDO TOTAL</div>
               </div>
             </Col>
           </Row>
         </Card>
-        <br/>
+        <br />
         <Card title="OTRA INFORMACION">
           <Row>
             <Col
@@ -65,8 +85,18 @@ const CardPeso = () => {
               md={{ order: 3 }}
               lg={{ order: 4 }}
             >
-               <div>
-                <h1>CH. EN CARTERA</h1>
+              <div className="div-content">
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={bank} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">CH. EN CARTERA</div>
+                </div>
               </div>
             </Col>
             <Col
@@ -76,8 +106,18 @@ const CardPeso = () => {
               md={{ order: 3 }}
               lg={{ order: 4 }}
             >
-               <div>
-                <h1>PEND. FACTURAR</h1>
+              <div className="div-content">
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={seeds} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">PEND. FACTURAR</div>
+                </div>
               </div>
             </Col>
             <Col
@@ -87,8 +127,18 @@ const CardPeso = () => {
               md={{ order: 3 }}
               lg={{ order: 4 }}
             >
-               <div>
-                <h1>VENTAS FORWARD</h1>
+              <div className="div-content">
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={grains} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">VENTAS FORWARD</div>
+                </div>
               </div>
             </Col>
             <Col
@@ -98,50 +148,52 @@ const CardPeso = () => {
               md={{ order: 3 }}
               lg={{ order: 4 }}
             >
-               <div>
-                <h1>CEREAL DISPONIBLE</h1>
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">CEREAL DISPONIBLE</div>
               </div>
             </Col>
           </Row>
         </Card>
-        <br/>
+        <br />
         <Card title="RESUMEN">
-
           <Row>
-            <Col
-              span={6}
-              xs={{ order: 1 }}
-              sm={{ order: 2 }}
-              md={{ order: 3 }}
-            >
-               <div>
-                <h1>CREDITO TOTAL</h1>
+            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }}>
+              <div className="div-content">
+                <div className="div-content-img">
+                  <div className="circulo bg-icon-purple-dark">
+                    <img className="img" src={grains} />
+                  </div>
+                </div>
+                <div style={{ width: "50%" }}>
+                  <div className="estilo-valor">
+                    <span>$0</span>
+                  </div>
+                  <div className="estilo-desc">CREDITO TOTAL</div>
+                </div>
               </div>
             </Col>
-            <Col
-              span={6}
-              xs={{ order: 1 }}
-              sm={{ order: 2 }}
-              md={{ order: 3 }}
-            >
-               <div>
-                <h1>ACUERDO DE CRÉDITO</h1>
+            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }}>
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">ACUERDO DE CRÉDITO</div>
               </div>
             </Col>
-            <Col
-              span={6}
-              xs={{ order: 1 }}
-              sm={{ order: 2 }}
-              md={{ order: 3 }}
-            >
-               <div>
-                <h1>CRÉDITO DISPONIBLE</h1>
+            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }}>
+              <div>
+                <div className="estilo-valor">
+                  <span>$0</span>
+                </div>
+                <div className="estilo-desc">CRÉDITO DISPONIBLE</div>
               </div>
             </Col>
           </Row>
         </Card>
-        <br/>
-
+        <br />
       </Col>
     </Card>
   );
