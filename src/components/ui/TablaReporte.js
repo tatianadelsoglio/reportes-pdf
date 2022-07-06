@@ -68,7 +68,7 @@ const TablaReporte = () => {
       <div className="div_wrapper">
         <Card
           title="PRODUCTOS PENDIENTES DE RETIRAR"
-          extra={<Button className="btn_reporte">REPORTE</Button>}
+          extra={<Button className="btn_reporte" target="_blank" onClick={() => {<DocPDF/>}}>REPORTE</Button>}
         >
             <Table className="tabla_reporte" dataSource={dataSource} columns={columns} />
         </Card>
