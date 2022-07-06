@@ -1,0 +1,42 @@
+@import "antd/dist/antd.css";
+
+.div_wrapper{    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+}
+
+.tabla_reporte{
+    width: 90vw;
+}
+
+.btn_reporte{
+    border: 1px dashed gray;
+}
+
+.ant-btn.ant-btn-default.btn_reporte:hover{
+    color: #00b33c;
+    border-color: #00b33c;
+}
+
+.ant-btn.ant-btn-default.btn_reporte:focus{
+    color: #00b33c;
+    border-color: #00b33c;
+}
+
+.ant-pagination-item-active a{
+    color: #00b33c;
+}
+
+.ant-pagination-item.ant-pagination-item-1.ant-pagination-item-active{
+    border-color: #00b33c;
+}
+
+.ant-pagination-item-active{
+    border-color: #00b33c;
+}
+
+.ant-table-cell::selection{
+    background: #00b33c;
+}
