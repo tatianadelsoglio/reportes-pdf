@@ -1,7 +1,8 @@
 import { Button, Card, Table } from "antd";
 import React from "react";
 import DocPDF from "./DocPDF";
-import './TablaReporte.css';
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import "./TablaReporte.css";
 
 const dataSource = [
   {
@@ -40,25 +41,25 @@ const columns = [
     title: "Fecha",
     dataIndex: "fecha",
     key: "fecha",
-    align: 'right',
+    align: "center",
   },
   {
     title: "N° Comprobante",
     dataIndex: "comprobante",
     key: "comprobante",
-    align: 'right',
+    align: "center",
   },
   {
     title: "Cantidad",
     dataIndex: "cantidad",
     key: "cantidad",
-    align: 'right',
+    align: "center",
   },
   {
     title: "Fecha Límite Retiro",
     dataIndex: "retiro",
     key: "retiro",
-    align: 'right',
+    align: "center",
   },
 ];
 
@@ -68,9 +69,22 @@ const TablaReporte = () => {
       <div className="div_wrapper">
         <Card
           title="PRODUCTOS PENDIENTES DE RETIRAR"
-          extra={<Button className="btn_reporte" target="_blank" onClick={() => {<DocPDF/>}}>REPORTE</Button>}
+          extra={
+            <Button
+              className="btn_reporte"
+              onClick={() => {
+                <DocPDF />;
+              }}
+            >
+              REPORTE
+            </Button>
+          }
         >
-            <Table className="tabla_reporte" dataSource={dataSource} columns={columns} />
+          <Table
+            className="tabla_reporte"
+            dataSource={dataSource}
+            columns={columns}
+          />
         </Card>
       </div>
     </>
