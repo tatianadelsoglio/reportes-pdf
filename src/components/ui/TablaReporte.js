@@ -1,5 +1,6 @@
 import { Button, Card, Table } from "antd";
 import React from "react";
+import DocPDF from "./DocPDF";
 import './TablaReporte.css';
 
 const dataSource = [
